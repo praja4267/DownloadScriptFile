@@ -53,7 +53,7 @@ echo "mounting the remotePCHost"
 hdiutil attach -nobrowse -noverify /tmp/RemotePCHost.dmg
 cp -R /Volumes/RemotePCHost /tmp
 hdiutil detach /Volumes/RemotePCHost
-echo "started installer at `date` located in `/tmp/RemotePCHost/*`"
+echo "started installer at `date` located in `ls /tmp/RemotePCHost/`"
 # installer -target / -pkg /tmp/RemotePCHost/RemotePCHost.pkg
 echo "Installation completed at `date`"
 rm -rf /tmp/RemotePCHost
