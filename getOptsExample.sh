@@ -6,6 +6,7 @@ function usage()
     echo -e "Example: curl https://raw.githubusercontent.com/praja4267/DownloadScriptFile/master/getOptsExample.sh | bash -s -a apple -b banana -c cherry"
 }
 
+echo "Params passed in are $@ "
 while getopts a:b:c: o
 do
     case $o in
