@@ -3,7 +3,7 @@
 function usage()
 {
     echo -e "Usage: `basename $1` [-i input streamer dmg file] [-d deploy code]..."
-    echo "Example: curl https://raw.githubusercontent.com/praja4267/DownloadScriptFile/master/getOptsExample.sh | bash -s -a apple -b banana -c cherry -d dfruit -e eggplant -f fig
+    echo -e "Example: curl https://raw.githubusercontent.com/praja4267/DownloadScriptFile/master/getOptsExample.sh | bash -s -a apple -b banana -c cherry"
 }
 
 while getopts a:b:c: o
