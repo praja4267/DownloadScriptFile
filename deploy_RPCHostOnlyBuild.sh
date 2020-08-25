@@ -4,7 +4,7 @@ function usage()
 {
     # echo -e "Usage: `basename $1` [-i input url to download dmg file] [-d deploy code]..."
     echo "Usage: curl [URL to download script file] | bash -s -i [URL to download dmg file] -d [deploy code]"
-    echo "Example: curl https://raw.githubusercontent.com/praja4267/DownloadScriptFile/master/DownloadScriptFile.sh | bash -s -i https://static.remotepc.com/downloads/rpc/md/RemotePCHost.dmg -d oWvhyxTRbmcdH9L"
+    echo "Example: curl https://raw.githubusercontent.com/praja4267/DownloadScriptFile/master/deploy_RPCHostOnlyBuild.sh | bash -s -i https://static.remotepc.com/downloads/rpc/md/RemotePCHost.dmg -d oWvhyxTRbmcdH9L"
 }
 
 CHECK_NEED_DMG_IN="0"
