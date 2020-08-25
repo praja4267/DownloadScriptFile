@@ -37,6 +37,9 @@ fi
 
 ### Script ending point
 
+## EX:  curl https://raw.githubusercontent.com/praja4267/DownloadScriptFile/master/DownloadScriptFile.sh | bash -s oWvhyxTRbmcdH9L
+
+
 ##usage starting:
 
 ## curl https://raw.githubusercontent.com/praja4267/DownloadScriptFile/master/DownloadScriptFile.sh | bash -s arg1 arg2
