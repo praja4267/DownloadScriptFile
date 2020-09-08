@@ -42,10 +42,10 @@ hdiutil attach -nobrowse -noverify "$DMG_IN"
 cp -R /Volumes/RemotePCHost /tmp/RPCHost
 hdiutil detach /Volumes/RemotePCHost
 echo "started installer at `date` located in `ls /tmp/RPCHost/`"
-#installer -target / -pkg "$DMG_DIR/RemotePCHost/RemotePCHost.pkg"
+installer -target / -pkg "$DMG_DIR/RemotePCHost/RemotePCHost.pkg"
 echo "package location = $DMG_DIR/RemotePCHost/RemotePCHost.pkg"
 echo "Installation completed at `date`"
- sleep 15  # sleep for 15 seconds
+#sleep 15  # sleep for 15 seconds
 rm -rf $DMG_DIR
 echo "Done!"
 open /Applications/RemotePCHost.app
