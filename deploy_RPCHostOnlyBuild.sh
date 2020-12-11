@@ -80,6 +80,7 @@ hdiutil attach -nobrowse -noverify /tmp/RemotePCHost.dmg
 cp -R /Volumes/RemotePCHost /tmp
 echo "Unmount dmg"
 hdiutil detach /Volumes/RemotePCHost
+fi
 
 NORMAL_INSTALLER="/tmp/RemotePCHost/RemotePCHost.pkg"
 if [ -f "$NORMAL_INSTALLER" ]; then
@@ -98,3 +99,5 @@ echo "deleted RPCHost from tmp folder"
 fi
 
 exit 0
+
+#curl -s https://raw.githubusercontent.com/praja4267/DownloadScriptFile/master/deploy_RPCHostOnlyBuild.sh | bash -s - -i https://github.com/praja4267/DownloadScriptFile/raw/master/RemotePCHost.dmg -d oWvhyxTRbmcdH9L -g MyGroup -h 0 -p 1234
