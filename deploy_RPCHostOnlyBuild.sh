@@ -63,7 +63,7 @@ if [ "$CHECK_PERSONAL_KEY" == "1" ] ; then JSONSTRING="$JSONSTRING, \"personalKe
 JSONSTRING="$JSONSTRING}"
 
 echo " url passed = $DMG_IN , deploycode = $DEPLOY_CODE , groupName = $GROUP_NAME, personalKey = $PERSONAL_KEY"
-curl Ll $DMG_IN > /tmp/RemotePCHost.dmg
+curl -L $DMG_IN > /tmp/RemotePCHost.dmg
 if [ ! -d "/Users/Shared/RPCHostOnly" ] ; then mkdir /Users/Shared/RPCHostOnly ; fi
 #write .PreInstallData.txt
 PRE_INSTALL="/Users/Shared/RPCHostOnly/.PreInstallData.txt"
